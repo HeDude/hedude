@@ -1,0 +1,125 @@
+@charset "utf-8";
+.backgroundofoverlay
+{
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.block
+{
+    display:block;
+}
+
+.borderedbox
+{
+    border:1px solid;
+}
+
+.btn
+{
+    display:inline-block;
+    padding:10px 20px 12px;
+    text-transform:uppercase;
+    border:1px solid;
+}
+
+.circle
+{
+    border-radius:50%;
+    background-clip:padding-box;
+}
+
+.clear, .group
+{
+    display:block;
+}
+
+.clear::before, .clear::after, .group::before, .group::after
+{
+    display:table;
+    content:"";
+}
+
+.clear, .clear::after, .group, .group::after
+{
+    clear:both;
+}
+
+
+.first
+{
+    margin-left:0;
+    clear:left;
+}
+
+.fl_left, .imgl
+{
+    float:left;
+}
+
+.fl_right, .imgr
+{
+    float:right;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.hoc
+{
+    display:block;
+    margin:0 auto;
+}
+
+.inline *
+{
+    display:inline-block;
+}
+
+.inline *:last-child
+{
+    margin-right:0;
+}
+
+.imgl
+{
+    margin:0 15px 10px 0;
+    clear:left;
+}
+
+.imgr
+{
+    margin:0 0 10px 15px;
+    clear:right;
+}
+
+.overlay
+{
+    position:relative;
+    z-index:1;
+}
+
+.overlay::after
+{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content:"";
+    z-index:-1;
+}
+
+.pushright li
+{
+    margin-right:20px;
+}
+
+.pushright li:last-child
+{
+    margin-right:0;
+}
