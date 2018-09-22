@@ -122,3 +122,15 @@
 {
     margin-right:0;
 }
+
+@media screen and (max-width:650px)
+{
+	.inline li
+	{
+		display:block; margin-bottom:10px;
+	}
+	.pushright li
+	{
+		margin-right:0;
+	}
+}
