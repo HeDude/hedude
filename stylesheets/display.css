@@ -46,6 +46,12 @@
     clear:both;
 }
 
+.first
+{
+    margin-left:0;
+    clear:left;
+}
+
 .fl_left, .imgl
 {
     float:left;
