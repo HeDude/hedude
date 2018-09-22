@@ -4,3 +4,8 @@
 @import url("https://www.hedude.com/stylesheets/spaces.css");
 @import url("https://www.hedude.com/stylesheets/text.css");
 @import url("https://www.hedude.com/stylesheets/widths.css");
+.first
+{
+    margin-left:0;
+    clear:left;
+}
