@@ -43,7 +43,7 @@
 
 .clear, .clear::after, .group, .group::after
 {
-    clear:both;
+     clear:both;
 }
 
 .first
