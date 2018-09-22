@@ -13,6 +13,11 @@ html, body
     line-height:1.6em;
 }
 
+*, *::before, *::after
+{
+    box-sizing:border-box;
+}
+
 body, input, textarea, select
 {
     font-family:Verdana, Geneva, sans-serif;
@@ -94,11 +99,6 @@ hr
     height:1px;
     border:solid;
     border-width:1px 0 0 0;
-}
-
-*, *::before, *::after
-{
-    box-sizing:border-box;
 }
 
 :required, :invalid
