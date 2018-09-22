@@ -1,69 +1,69 @@
-/* The he_image_sequence allows a certain number images to be forced on a row
+/* The image_sequence allows a certain number images to be forced on a row
    without allowing scaling or responsiveness to change this.
    Choose either 3, 4 or 5 images on a row */
 
 /* 3 images per row */
-.he_image_sequence_3
+.image_sequence_3
 {
 	padding:30px 0;
 }
-.he_image_sequence_3 li
+.image_sequence_3 li
 {
 	float:left; width:27%; margin-left:9%;
 }
-.he_image_sequence_3 li:first-child
+.image_sequence_3 li:first-child
 {
 	margin-left:0;
 }
-.he_image_sequence_3 li img
+.image_sequence_3 li img
 {
 	opacity:.5;
 }
-.he_image_sequence_3 li:hover img
+.image_sequence_3 li:hover img
 {
 	opacity:1;
 }
 
 /* 4 images per row */
-.he_image_sequence_4
+.image_sequence_4
 {
 	padding:30px 0;
 }
-.he_image_sequence_4 li
+.image_sequence_4 li
 {
 	float:left; width:20%; margin-left:6%;
 }
-.he_image_sequence_4 li:first-child
+.image_sequence_4 li:first-child
 {
 	margin-left:0;
 }
-.he_image_sequence_4 li img
+.image_sequence_4 li img
 {
 	opacity:.5;
 }
-.he_image_sequence_4 li:hover img
+.image_sequence_4 li:hover img
 {
 	opacity:1;
 }
 
 /* 5 images per row */
-.he_image_sequence_5
+.image_sequence_5
 {
 	padding:30px 0;
 }
-.he_image_sequence_5 li
+.image_sequence_5 li
 {
 	float:left; width:16%; margin-left:5%;
 }
-.he_image_sequence_5 li:first-child
+.image_sequence_5 li:first-child
 {
 	margin-left:0;
 }
-.he_image_sequence_5 li img
+.image_sequence_5 li img
 {
 	opacity:.5;
 }
-.he_image_sequence_5 li:hover img
+.image_sequence_5 li:hover img
 {
 	opacity:1;
 }
