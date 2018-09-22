@@ -23,15 +23,6 @@ a
     text-decoration:none;
 }
 
-.fl_left, .imgl
-{
-    float:left;
-}
-.fl_right, .imgr
-{
-    float:right;
-}
-
 img
 {
     width:auto;
@@ -42,16 +33,6 @@ img
     border:none;
     line-height:normal;
     vertical-align:middle;
-}
-.imgl
-{
-    margin:0 15px 10px 0;
-    clear:left;
-}
-.imgr
-{
-    margin:0 0 10px 15px;
-    clear:right;
 }
 
 body, input, textarea, select
