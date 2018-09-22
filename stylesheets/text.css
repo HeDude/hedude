@@ -43,3 +43,9 @@
     text-align:left;
     word-wrap:break-word;
 }
+
+.first
+{
+    margin-left:0;
+    clear:left;
+}
