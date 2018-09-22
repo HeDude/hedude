@@ -17,26 +17,6 @@ html, body
     box-sizing: border-box;
 }
 
-.bold
-{
-    font-weight:bold;
-}
-.center
-{
-    text-align:center;
-}
-.right
-{
-    text-align:right;
-}
-.uppercase
-{
-    text-transform:uppercase;
-}
-.capitalise
-{
-    text-transform:capitalize;
-}
 .hidden
 {
     display:none;
