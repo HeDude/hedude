@@ -46,6 +46,12 @@
     clear:both;
 }
 
+.first
+{
+    margin-left:0;
+    clear:left;
+}
+
 .fl_left, .imgl
 {
     float:left;
@@ -115,10 +121,4 @@
 .pushright li:last-child
 {
     margin-right:0;
-}
-
-.first
-{
-    margin-left:0;
-    clear:left;
 }
