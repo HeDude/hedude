@@ -24,6 +24,21 @@ html, body
     line-height:1.6em;
 }
 
+body, input, textarea, select
+{
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:22px;
+    margin:0 0 20px 0;
+    line-height:normal;
+    font-weight:normal;
+    text-transform:uppercase;
+}
+
 a
 {
     outline:none;
@@ -40,16 +55,6 @@ img
     border:none;
     line-height:normal;
     vertical-align:middle;
-}
-
-body, input, textarea, select
-{
-    font-family:Verdana, Geneva, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, .heading
-{
-    font-family:Georgia, "Times New Roman", Times, serif;
 }
 
 form, fieldset, legend
@@ -80,19 +85,17 @@ label
     margin-bottom:5px;
 }
 
-h1, h2, h3, h4, h5, h6, .heading
-{
-    margin:0 0 20px 0;
-    font-size:22px;
-    line-height:normal;
-    font-weight:normal;
-    text-transform:uppercase;
-}
-
 address
 {
     font-style:normal;
     font-weight:normal;
+}
+
+address, article, aside, figcaption, figure, footer, header, main, nav, section
+{
+    display:block;
+    margin:0;
+    padding:0;
 }
 
 hr
@@ -102,11 +105,4 @@ hr
     height:1px;
     border:solid;
     border-width:1px 0 0 0;
-}
-
-address, article, aside, figcaption, figure, footer, header, main, nav, section
-{
-    display:block;
-    margin:0;
-    padding:0;
 }
