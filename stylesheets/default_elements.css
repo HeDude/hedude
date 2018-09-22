@@ -1,20 +1,27 @@
 @charset "utf-8";
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+:required, :invalid
+{
+    outline:none;
+    box-shadow:none;
+}
+
 html
 {
     overflow-y:scroll;
     overflow-x:hidden;
 }
+
 html, body
 {
     margin:0;
     padding:0;
     font-size:14px;
     line-height:1.6em;
-}
-
-*, *::before, *::after
-{
-    box-sizing: border-box;
 }
 
 a
@@ -39,6 +46,7 @@ body, input, textarea, select
 {
     font-family:Verdana, Geneva, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6, .heading
 {
     font-family:Georgia, "Times New Roman", Times, serif;
@@ -50,10 +58,12 @@ form, fieldset, legend
     padding:0;
     border:none;
 }
+
 legend
 {
     display:none;
 }
+
 label, input, textarea, select, button
 {
     display:block;
@@ -64,14 +74,10 @@ label, input, textarea, select, button
     font-family:inherit;
     vertical-align:middle;
 }
+
 label
 {
     margin-bottom:5px;
-}
-:required, :invalid
-{
-    outline:none;
-    box-shadow:none;
 }
 
 h1, h2, h3, h4, h5, h6, .heading
@@ -88,6 +94,7 @@ address
     font-style:normal;
     font-weight:normal;
 }
+
 hr
 {
     display:block;
