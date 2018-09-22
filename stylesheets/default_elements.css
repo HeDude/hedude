@@ -17,30 +17,6 @@ html, body
     box-sizing: border-box;
 }
 
-.hidden
-{
-    display:none;
-}
-.block
-{
-    display:block;
-}
-.inline *
-{
-    display:inline-block;
-}
-.inline *:last-child
-{
-    margin-right:0;
-}
-.pushright li
-{
-    margin-right:20px;
-}
-.pushright li:last-child
-{
-    margin-right:0;
-}
 .borderedbox
 {
     border:1px solid;
