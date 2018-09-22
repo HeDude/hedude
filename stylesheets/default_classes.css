@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url("https://www.hedude.com/stylesheets/widths.css");
 @import url("https://www.hedude.com/stylesheets/spaces.css");
+@import url("https://www.hedude.com/stylesheets/font_sizes.css");
 
 .bold
 {
@@ -127,23 +128,6 @@
     line-height:normal;
     font-weight:normal;
     text-transform:uppercase;
-}
-
-.font-xs
-{
-    font-size:.8rem;
-}
-.font-x1
-{
-    font-size:1.2rem;
-}
-.font-x2
-{
-    font-size:1.8rem;
-}
-.font-x3
-{
-    font-size:2.8rem;
 }
 
 .wrapper

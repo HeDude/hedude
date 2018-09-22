@@ -1,0 +1,17 @@
+@charset "utf-8";
+.font-xs
+{
+    font-size:.8rem;
+}
+.font-x1
+{
+    font-size:1.2rem;
+}
+.font-x2
+{
+    font-size:1.8rem;
+}
+.font-x3
+{
+    font-size:2.8rem;
+}
