@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo $this->stylesheet_relative_directory; ?>">
+    <title><?php if ( array_key_exists( 'title', $this->parameters ) ) { echo $this->parameters[ 'title' ]; }?></title>
+</head>
+
+<body id="top">
+    <div class="container-fluid">
+        <table class="tm-table-full-width tm-font-normal">
+            <tbody>
+                <?php $nr = 1; foreach ( $this->parameters as $property => $value ) { $nr = ( $nr === 1 ) ? 3 : 1;?>
+                <tr class="tm-bg-green-<?=$nr?>">
+                    <td class="tm-plan-table-cell"><?php echo ucfirst( $property ); ?></td>
+                    <td class="tm-plan-table-cell"><?=$value?></td>
+                </tr>
+                <?php }?>
+                <?php if ( array_key_exists( 'url', $this->parameters ) && !empty( $this->parameters[ 'url' ] ) ) {?>
+                <tr><td class="tm-plan-table-cell tm-plan-table-cell-pad-small text-xs-center"><a href="<?=$this->parameters[ 'url' ]?>" class="tm-bg-purple-1 tm-btn-rounded tm-btn-rounded-tall tm-btn-purple">Visit</a></td></tr>
+                <?php } ?>
+            </tbody>
+        </table>
+    </div> <!-- container-fluid -->
+</body>
+
+</html>
