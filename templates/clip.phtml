@@ -80,6 +80,19 @@
                                                             if ( array_key_exists( 'duration', $this->parameters ) )
                                                             {
                                                                 sscanf( $this->parameters[ 'duration' ], '%d:%d:%d', $hours, $minutes, $seconds );
+                                                                if ( isset( $seconds ) )
+                                                                {
+                                                                    $time_in_seconds = $hours * 3600 + $minutes * 60 + $seconds;
+                                                                }
+                                                                else if ( isset( $minutes ) )
+                                                                {
+                                                                    $time_in_seconds = $hours * 60 + $minutes;
+                                                                }
+                                                                else
+                                                                {
+                                                                    $time_in_seconds = $hours;
+                                                                }
+                                                                echo max ( 0, 100 - round ( $time_in_seconds / 3600 ) );
                                                             }?>"
                                                         data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
                                                     >
