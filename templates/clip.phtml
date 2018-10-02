@@ -14,7 +14,7 @@
                 <div class="wrap">
                     <div class="clip_information">
                         <div class="clip-pic wthree">
-                            <img src="<?php if ( array_key_exists( 'title', $this->parameters ) ) { echo $this->parameters[ 'thumbnail_url' ]; }?>" alt="Clip image">
+                            <img src="https://img.youtube.com/vi/<?php if ( array_key_exists( 'id', $this->parameters ) ) { echo $this->parameters[ 'id' ]; }?>/hqdefault.jpg " alt="Clip image">
                             <h3><?php if ( array_key_exists( 'title', $this->parameters ) ) { echo $this->parameters[ 'title' ]; }?></h3>
                             <div class="w3ls-agile-left">
                                 <ul class="clip-details">
@@ -90,7 +90,7 @@
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
 
-                                                    <div class="circlechart" data-percent="5" data-text="33"></div>
+                                                    <div class="circlechart" data-percent="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo round( log10( $this->parameters[ 'views' ] ) ); }?>" data-text="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo $this->parameters[ 'views' ]; }?>"></div>
                                                     <h4>Weergaven</h4>
                                                 </div>
                                             </div>
