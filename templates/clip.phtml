@@ -15,7 +15,7 @@
                     <div class="clip_information">
                         <div class="clip-pic wthree">
                             <a href="https://www.youtube.com/watch?v=<?php if ( array_key_exists( 'id', $this->parameters ) ) { echo $this->parameters[ 'id' ]; }?>"><img src="https://img.youtube.com/vi/<?php if ( array_key_exists( 'id', $this->parameters ) ) { echo $this->parameters[ 'id' ]; }?>/hqdefault.jpg" alt="Clip image"></a>
-                            <h4><?php if ( array_key_exists( 'title', $this->parameters ) ) { echo $this->parameters[ 'title' ]; }?></h4>
+                            <h4><?php if ( array_key_exists( 'title', $this->parameters ) ) { echo str_replace('_', ' ', $this->parameters[ 'title' ] ) ; }?></h4>
                             <div class="w3ls-agile-left">
                                 <ul class="clip-details">
                                     <li>
