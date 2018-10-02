@@ -74,9 +74,7 @@
                                         <div class="w3ls_banner_bottom_grids">
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
-                                                    <div
-                                                        class="circlechart"
-                                                        data-percent="<?php
+                                                    <div class="circlechart" data-percent="<?php
                                                             if ( array_key_exists( 'duration', $this->parameters ) )
                                                             {
                                                                 sscanf( $this->parameters[ 'duration' ], '%d:%d:%d', $hours, $minutes, $seconds );
@@ -93,17 +91,13 @@
                                                                     $time_in_seconds = $hours;
                                                                 }
                                                                 echo max ( 0, 100 - round ( $time_in_seconds / 9 ) );
-                                                            }?>"
-                                                        data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"></div>
+                                                            }?>" data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"></div>
                                                     <h4>Tijd</h4>
                                                 </div>
                                             </div>
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
-                                                    <div
-                                                        class="circlechart"
-                                                        data-percent="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>"
-                                                        data-text="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>%"></div>
+                                                    <div class="circlechart" data-percent="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>" data-text="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>%"></div>
                                                     <h4>Advies</h4>
                                                 </div>
                                             </div>
