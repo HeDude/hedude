@@ -76,23 +76,7 @@
                                                 <div class="clip_statistic">
                                                     <div
                                                         class="circlechart"
-                                                        data-percent="<?php
-                                                                if ( array_key_exists( 'duration', $this->parameters ) )
-                                                                {
-                                                                    sscanf( $this->parameters[ 'duration' ], '%d:%d:%d', $hours, $minutes, $seconds );
-                                                                    if ( isset( $seconds ) )
-                                                                    {
-                                                                        echo $hours * 3600 + $minutes * 60 + $seconds;
-                                                                    }
-                                                                    else if ( isset( $minutes ) )
-                                                                    {
-                                                                        echo $hours * 60 + $minutes
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        echo $hours;
-                                                                    }
-                                                                }?>"
+                                                        data-percent=""
                                                         data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
                                                     >
                                                     </div>
