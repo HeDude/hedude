@@ -76,7 +76,7 @@
                                                 <div class="clip_statistic">
                                                     <div
                                                         class="circlechart"
-                                                        data-percent=""
+                                                        data-percent="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
                                                         data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
                                                     >
                                                     </div>
