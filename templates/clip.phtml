@@ -94,15 +94,12 @@
                                                                 }
                                                                 echo max ( 0, 100 - round ( $time_in_seconds / 9 ) );
                                                             }?>"
-                                                        data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
-                                                    >
-                                                    </div>
+                                                        data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"></div>
                                                     <h4>Tijd</h4>
                                                 </div>
                                             </div>
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
-
                                                     <div
                                                         class="circlechart"
                                                         data-percent="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>"
@@ -112,12 +109,10 @@
                                             </div>
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
-
                                                     <div
                                                         class="circlechart"
                                                         data-percent="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo round( log( $this->parameters[ 'views' ] ) ); }?>"
-                                                        data-text="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo $this->parameters[ 'views' ]; }?>">
-                                                    </div>
+                                                        data-text="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo $this->parameters[ 'views' ]; }?>"></div>
                                                     <h4>Weergaven</h4>
                                                 </div>
                                             </div>
