@@ -77,8 +77,7 @@
                                                     <div
                                                         class="circlechart"
                                                         data-percent=
-                                                        "
-                                                            <?php
+                                                        "<?php
                                                                 if ( array_key_exists( 'duration', $this->parameters ) )
                                                                 {
                                                                     sscanf( $this->parameters[ 'duration' ], '%d:%d:%d', $hours, $minutes, $seconds );
@@ -95,8 +94,7 @@
                                                                         echo $hours;
                                                                     }
                                                                 }
-                                                            ?>
-                                                        "
+                                                            ?>"
                                                         data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
                                                     >
                                                     </div>
