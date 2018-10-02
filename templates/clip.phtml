@@ -20,17 +20,17 @@
                                 <ul class="clip-details">
                                     <li>
                                         <ul class="clip-details-text">
-                                            <li><b>Sex </b></li>
+                                            <li><b>Doel </b></li>
                                             <li>: </li>
-                                            <li> <span class="w3">Female</span></li>
+                                            <li> <span class="w3"><?php if ( array_key_exists( 'goal', $this->parameters ) ) { echo $this->parameters[ 'goal' ]; }?></span></li>
                                         </ul>
                                     </li>
 
                                     <li>
                                         <ul class="clip-details-text">
-                                            <li><b>D.O.B </b></li>
+                                            <li><b>Gebruik </b></li>
                                             <li>: </li>
-                                            <li> <span class="w3">03-02-1984</span></li>
+                                            <li> <span class="w3"><?php if ( array_key_exists( 'usage', $this->parameters ) ) { echo $this->parameters[ 'usage' ]; }?></span></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -61,11 +61,9 @@
                                             <li><a href="mailto:example@mail.com"> <span class="w3">mail@example.com</span></a></li>
                                         </ul>
                                     </li>
-
                                 </ul>
                                 <div class="clear"></div>
                             </div>
-
                         </div>
 
                         <div class="clip-ser">
@@ -76,21 +74,51 @@
                                         <div class="w3ls_banner_bottom_grids">
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
-                                                    <div class="circlechart" data-percent="10" data-text="1:08"></div>
+                                                    <div
+                                                        class="circlechart"
+                                                        data-percent="
+                                                            <?php
+                                                                if ( array_key_exists( 'duration', $this->parameters ) )
+                                                                {
+                                                                    sscanf( $this->parameters[ 'duration' ], "%d:%d:%d", $hours, $minutes, $seconds );
+                                                                    if isset( $seconds )
+                                                                    {
+                                                                        echo $hours * 3600 + $minutes * 60 + $seconds;
+                                                                    }
+                                                                    else if isset( $minutes )
+                                                                    {
+                                                                        echo $hours * 60 + $minutes
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        echo $hours;
+                                                                    }
+                                                                }
+                                                            ?>"
+                                                        data-text="<?php if ( array_key_exists( 'duration', $this->parameters ) ) { echo $this->parameters[ 'duration' ]; }?>"
+                                                    >
+                                                    </div>
                                                     <h4>Tijd</h4>
                                                 </div>
                                             </div>
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
 
-                                                    <div class="circlechart" data-percent="100" data-text="100%"></div>
+                                                    <div
+                                                        class="circlechart"
+                                                        data-percent="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>"
+                                                        data-text="<?php if ( array_key_exists( 'advice', $this->parameters ) ) { echo $this->parameters[ 'advice' ]; }?>%"></div>
                                                     <h4>Advies</h4>
                                                 </div>
                                             </div>
                                             <div class="statistics_container">
                                                 <div class="clip_statistic">
 
-                                                    <div class="circlechart" data-percent="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo round( log10( $this->parameters[ 'views' ] ) ); }?>" data-text="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo $this->parameters[ 'views' ]; }?>"></div>
+                                                    <div
+                                                        class="circlechart"
+                                                        data-percent="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo round( log( $this->parameters[ 'views' ] ) ); }?>"
+                                                        data-text="<?php if ( array_key_exists( 'views', $this->parameters ) ) { echo $this->parameters[ 'views' ]; }?>">
+                                                    </div>
                                                     <h4>Weergaven</h4>
                                                 </div>
                                             </div>
