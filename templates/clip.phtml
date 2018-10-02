@@ -32,20 +32,14 @@
                                             <li> <span class="w3"><?php if ( array_key_exists( 'usage', $this->parameters ) ) { echo $this->parameters[ 'usage' ]; }?></span></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <ul class="clip-details-text">
-                                            <b>Beschrijving</b>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <span class="w3"><?php if ( array_key_exists( 'description', $this->parameters ) ) { echo $this->parameters[ 'description' ]; }?></span>
-                                    </li>
                                 </ul>
                                 <div class="clear"></div>
                             </div>
                         </div>
 
                         <div class="clip-ser">
+                            <h4>Beschrijving</h4>
+                            <span class="w3"><?php if ( array_key_exists( 'description', $this->parameters ) ) { echo $this->parameters[ 'description' ]; }?></span>
                             <h4>Statistieken</h4>
                             <div class="awards-agileinfo  w3ls-section">
                                 <div class="awardsw3-agileits banner-agileinfo">
