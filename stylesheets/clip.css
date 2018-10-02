@@ -34,7 +34,7 @@ h3
 
 h4
 {
-	color: #E1E1E1;
+	color: #444444;
 	font-size: 30px;
 	margin-bottom: 20px;
 }
@@ -93,7 +93,7 @@ span.w3
 	font-size: 20px;
 	margin-top: 15px;
 	font-style: italic;
-	color: #E1E1E1;
+	color: #444444;
 	text-align: center;
 }
 
@@ -169,7 +169,7 @@ span.w3
 .w3ls-agile-left-info h4, .social-info h4
 {
 	font-size: 1em;
-	color: #E1E1E1;
+	color: #444444;
 	flex-basis: 45%;
 	font-weight: 600;
 	margin-right: 25px;
