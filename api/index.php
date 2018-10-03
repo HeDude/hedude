@@ -8,11 +8,12 @@
 * \date        25-08-2018
 * \version     1.0.0
 */
-$directory_server_php_library = "/srv/production/controller/php/";
-require_once $directory_server_php_library . "api.php";
+//! The API handling class from the education server
+require_once getenv ( 'API_PHP_EDUCATION_SERVER_PATH' );
 
-//! Return API respons (if not through Tor browser) based on the request
+//! Open API en link to local information
 $api = new API( __DIR__ );
-$api->prevent_Tor( __DIR__ . '/cache/' );
-$api->respond();
+
+//! Return API respons based on the calling URL
+$api->respond( $_SERVER[ 'REQUEST_URI' ] );
 exit;
