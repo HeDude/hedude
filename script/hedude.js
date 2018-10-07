@@ -99,7 +99,10 @@
 				var id_selector = "#" + id;
 
 				// Extract the location of the template that shoud be used
-				var template_location = "https://www.hedude.com/template/element/" + $( id_selector ).data( 'hedude-template' ) + ".html";
+				var template_location = 'https://www.hedude.com/template/element/' + $( id_selector ).data( 'hedude-template' ).trim() + '.html';
+
+                // Add default stylesheet that belongs to template
+                $('head').prepend('<link rel="stylesheet" type="text/css" href="https://www.hedude.com/stylesheet/element/' + $( id_selector ).data( 'hedude-template' ).trim() + '.css">');
 
 				// Check if a data-hedude-template attribute is specified.
 				if ( typeof template_location !== 'undefined' )
