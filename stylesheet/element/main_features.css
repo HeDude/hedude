@@ -1,0 +1,102 @@
+@charset "utf-8";
+.hedude .main_features
+{
+	width:100%;
+	height:100%;
+	margin-top:70px;
+}
+
+.hedude .main_features p
+{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 1.1em;
+	font-family: sans-serif;
+}
+
+.hedude .main_features .bigFont
+{
+	font-size:3.8em;
+	line-height: 80px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.hedude .main_features .overlay
+{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height:auto;
+	height:100%;
+}
+.hedude .main_features .overlay > .container
+{
+	padding:200px 0px;
+}
+
+.hedude .main_features .btn
+{
+	padding: 12px 20px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 0;
+}
+
+.hedude .main_features .btns
+{
+	font-size: 14px;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 0px;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	width:220px;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	-ms-animation-duration:2s;
+}
+.hedude .main_features .btns:hover
+{
+    font-size: 12px;
+	box-shadow:2px 2px 3px 3px rgba(0,0,0,0.4);
+}
+.hedude .main_features .black_background
+{
+	background-color:#000000;
+}
+
+.hedude .main_features .features
+{
+     margin:auto;
+     text-align: center;
+}
+.hedude .main_features .titles
+{
+     margin:auto;
+     text-align: center;
+}
+
+.hedude .main_features .section_color
+{
+	color:#000000;
+}
+
+.hedude .main_features .section_background_color
+{
+	background-color:#777777;
+}
+
+.hedude .main_features .white_background
+{
+	background-color:#FFFFFF;
+}
