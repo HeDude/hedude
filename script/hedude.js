@@ -99,7 +99,7 @@
 				var id_selector = "#" + id;
 
 				// Extract the location of the template that shoud be used
-				var template_location = "https://www.hedude.com/template/" + $( id_selector ).data( 'hedude-template' ) + ".html";
+				var template_location = "https://www.hedude.com/template/element/" + $( id_selector ).data( 'hedude-template' ) + ".html";
 
 				// Check if a data-hedude-template attribute is specified.
 				if ( typeof template_location !== 'undefined' )
