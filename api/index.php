@@ -9,7 +9,9 @@
 * \version     1.0.0
 */
 //! The API handling class from the education server
-require_once getenv ( 'API_PHP_EDUCATION_SERVER_PATH' );
+if ( empty( getenv ( 'API_PROGRAM_PATH' ) ) )
+    exit;
+require_once getenv ( 'API_PROGRAM_PATH' );
 
 //! Open API en link to local information
 $api = new API( __DIR__ );
