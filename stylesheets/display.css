@@ -351,13 +351,27 @@
 
 @media screen and (max-width:750px)
 {
+	.container
+	{
+		padding-bottom: 50px;
+	}
+
+	.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next
+	{
+		display:none;
+	}
+	.flex-control-nav
+	{
+		display:block;
+	}
+
 	.imgl, .imgr
 	{
 		display:inline-block;
         float:none;
         margin:0 0 10px 0;
 	}
-	.bee_float_left, .fl_right
+	.bee_float_left, .fl_left, .fl_right
 	{
 		display:block;
         float:none;
@@ -418,12 +432,15 @@
 	}
 	.scrollable table
 	{
-		margin:0; padding:0; white-space:nowrap;
+		margin:0;
+		padding:0;
+		white-space:nowrap;
 	}
 
 	.inline li
 	{
-		display:block; margin-bottom:10px;
+		display:block;
+		margin-bottom:10px;
 	}
 
 	.pushright li
