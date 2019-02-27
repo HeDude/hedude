@@ -1,4 +1,9 @@
 @charset "utf-8";
+.row0
+{
+    border-bottom:1px solid;
+}
+
 .row1, .row1 a
 {
 }
