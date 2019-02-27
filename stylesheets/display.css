@@ -61,6 +61,7 @@
 .container .content
 {
 }
+
 .container .sidebar
 {
 }
@@ -128,6 +129,35 @@
 .fl_right, .imgr
 {
     float:right;
+}
+
+.font_awesome_icon
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.font_awesome_icon a
+{
+    display:inline-block;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    font-size:18px;
+    text-align:center;
+    border-radius:50%;
+    background-clip:padding-box;
+}
+.font_awesome_icon li
+{
+    display:inline-block;
+    margin:8px 5px 0 0;
+    padding:0;
+    line-height:normal;
+}
+.font_awesome_icon li:last-child
+{
+    margin-right:0;
 }
 
 .hidden
