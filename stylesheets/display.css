@@ -228,6 +228,17 @@
     margin-right:0;
 }
 
+.section_title
+{
+	display:block;
+	margin-bottom:80px;
+}
+
+.section_title *
+{
+	margin:0;
+}
+
 .sidebar .sdb_holder
 {
 	margin-bottom:50px;
