@@ -1,0 +1,22 @@
+@charset "utf-8";
+.background_color_gray_darkest
+{
+    background-color: #222222;
+}
+.background_color_gray_light
+{
+    background-color: #DDDDDD;
+}
+.background_color_white
+{
+    background-color: #FFFFFF;
+}
+
+.color_gray_light
+{
+    color: #DDDDDD;
+}
+.color_gray_muted
+{
+    color: #777777;
+}
