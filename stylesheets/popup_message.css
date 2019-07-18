@@ -1,0 +1,13 @@
+img.hedude_popup_message
+{
+    position: absolute;
+    border-radius: 16px;
+    border-style: outset;
+    border-width: 10px;
+    display: block;
+    left: 30%;
+    top: 50px;
+    width: 40%;
+    cursor: pointer;
+    z-index: 999;
+}
