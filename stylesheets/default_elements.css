@@ -34,7 +34,7 @@ ol,ul
     margin:0px;
     padding:0px;
 }
-blockquote,q
+blockquote, q
 {
     quotes:none;
 }
@@ -51,6 +51,7 @@ table
 
 html
 {
+    box-sizing: border-box;
     overflow-y : scroll;
     overflow-x : hidden;
 }
@@ -118,6 +119,12 @@ td
 	border-width:0 1px;
 }
 
+mark
+{
+    background-color: transparent;
+    color: inherit;
+}
+
 nav ul, nav ol
 {
 	margin:0;
@@ -130,6 +137,12 @@ form, fieldset, legend
     margin:0;
     padding:0;
     border:none;
+}
+
+input::-moz-focus-inner
+{
+    border: 0;
+    padding: 0;
 }
 
 legend
