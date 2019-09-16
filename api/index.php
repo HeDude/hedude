@@ -16,7 +16,6 @@ require_once getenv ( 'API_PROGRAM_PATH' );
 //! Open API en link to local information
 $api = new API( __DIR__ );
 
-//! Return API respons based on the calling URL which respond will determine by
-//! the server globals.
+//! Let API respond based on the calling URL as determined by the server globals.
 $api->respond();
 exit;
