@@ -9,13 +9,18 @@
 * \version     1.0.1
 */
 //! The API handling class from the education server
-if ( empty( getenv ( 'API_PROGRAM_PATH' ) ) )
+if ( empty( getenv ( 'SERVICE_PATH' ) ) )
+{
     exit;
-require_once getenv ( 'API_PROGRAM_PATH' );
+}
+require_once getenv ( 'SERVICE_PATH' ) . '/service_api_hedude_com.php';
 
 //! Open API en link to local information
-$api = new API( __DIR__ );
+$api = new Service_api_hedude_com( __DIR__ );
 
-//! Let API respond based on the calling URL as determined by the server globals.
-$api->respond();
+//! Let API show the result based on the calling URL as determined by the server globals.
+if ( !$api->get_by_url() )
+{
+    $api->get_by_url( "https://api.hedude.com/help/html/en?title=Instruction" );
+}
 exit;
