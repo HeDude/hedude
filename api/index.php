@@ -21,6 +21,11 @@ $api = new Service_api_hedude_com( __DIR__ );
 //! Let API show the result based on the calling URL as determined by the server globals.
 if ( !$api->get_by_url() )
 {
+    //! When the default api call is done for extracting the instruction for usage
+    //! the HTTP response status code is reset.
+    //! So store it to return the response to the request in stead of the correct help request done here.
+    $status = http_response_code();
     $api->get_by_url( "https://api.hedude.com/help/html/en?title=Instruction" );
+    http_response_code( $status );
 }
 exit;
